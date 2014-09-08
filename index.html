@@ -5,24 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon"
- href="http://example.com/myicon.ico" />
-    <title>Bootstrap 101 Template</title>
-
-    <!-- Bootstrap -->
+ href="img/bbfavicon.ico" />
+    <title>Burke Builders</title>
     <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
   </head>
   <body>
 
+  <header class="masthead">
+
     <div class="jumbotron">
       <div class="container">
-        <div>
-          <img src="img/burke-builders-logo.png" class="img-responsive" alt="Responsive image">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-1">
+            <div>
+              <img src="img/burke-builders-logo.png" class="img-responsive" alt="Responsive image">
+            </div>
+          </div>
+          <div class="col-md-7">
+
+            <ul class="list-inline text-center topnav">
+
+              <li><h4 class="topnav"> About</h4> </li>
+              <li><h4 class="topnav"> Services</h4></li>
+              <li><h4 class="topnav"> Work  </h4></li>
+              <li><h4 class="topnav"> Team  </h4></li>
+              <li><h4 class="topnav"> Contact  </h4></li>
+              <li><h4 class="topnav"> News  </h4></li>
+
+            </ul>
+
+          </div>
         </div>
-        
       </div>
     </div>
-    <nav class="navbar navbar-default" role="navigation">
+
+  </header>
+
+  <div id="nav">
+  <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -32,6 +54,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+      <a id="navlogo" class="brand" href="index.html"> <img src="img/resize.png"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -39,32 +62,71 @@
       <ul class="nav navbar-nav">
       </ul>
       
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About</a></li>
+          <ul class="nav navbar-nav navbar-center">
+            <li><a href="#">About</a></li>
           </ul>
-            <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Work</a></li>
+          <ul class="nav navbar-nav navbar-center">
+            <li><a href="#">Work</a></li>
           </ul>
-            <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">People</a></li>
+            <ul class="nav navbar-nav navbar-center">
+            <li><a href="#">People</a></li>
           </ul>
-              <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Contact</a></li>
+          <ul class="nav navbar-nav navbar-center">
+            <li><a href="#">News</a></li>
           </ul>
-        </li>
-      </ul>
+          <ul class="nav navbar-nav navbar-center">
+            <li><a href="#">Contact</a></li>
+          </ul>
+
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+</div>
 
 
     <div class="container">
-      <h1> Burke Builders </h1>
+      <h1> About </h1>
+      <hr class="hr2">
       <div class="row">
-        <div class="col-md-12">
-          <p>Burke Builders is a Class A licensed contractor that performs work in all facets of construction.  We have an experienced management team and established relationships with proven subcontractors that perform a wide variety of construction activities.  Coupled with structural engineering services, Burke Builders can take your project from start to finish. The following pages contain information regarding Burke Builders’ management team, projects completed, projects currently underway, interior finish samples, client testimonials and our contact information. If you have additional questions we invite you to give us a call or send us an email.  We look forward to hearing from you!
-         </p>
-          <p><a class="btn btn-default" href="#" role="button">What Our Clients Say &raquo;</a></p>
+        <div class="col-md-8 col-md-offset-2 text-center">
+          <p>Burke Builders is a construction services company based in Boulder, Colorado.  Our team is distinguished by its commitment to excellence, industry experience and integrity, all reflected in our 12-year record of success delivering projects safely, on-time and on-budget. </p>
+
+          <p> Burke Builders serves a range of markets including restaurant, retail, office, government, medical, light industrial, multifamily and historic restoration. </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <h1> Services </h1>
+      <div class="row">
+        <div class="col-md-1 col-md-offset-3 text-center">
+          <svg width="200" height="200">
+            <circle class="servicecir" cx="80" cy="100" r="75" stroke="#777" stroke-width="4" fill="#fdfdfd" />
+            <text x="40"  y="100" >
+                    <tspan x="25" dy="0">Preconstruction</tspan>
+                    <tspan x="35" dy="1.2em">and Planning</tspan>
+            </text>
+          </svg>
+        </div>
+        <div class="col-md-1 col-md-offset-1 text-center">
+          <svg width="200" height="200">
+            <circle class="servicecir" cx="80" cy="100" r="75" stroke="#777" stroke-width="4" fill="#fdfdfd" />
+            <text x="30"  y="100" >
+                Construction
+            </text>
+          </svg>
+        </div>
+        <div class="col-md-1 col-md-offset-1 text-center">
+          <svg width="200" height="200">
+            <circle class="servicecir" cx="80" cy="100" r="75" stroke="#777" stroke-width="4" fill="#fdfdfd" />
+            <text x="30"  y="100" >
+                Small Projects
+            </text>
+          </svg>
         </div>
 
       </div>
@@ -75,13 +137,10 @@
     <div class="container">
       <h1> Work </h1>
       <div class="row">
-        <div class="col-md-4">
-          
-        </div>
-        <div class="col-md-4">
-          
-       </div>
-        <div class="col-md-4">
+         <ul class="list-inline">
+          <li><p><a class="btn btn-default" href="#" role="button">Client Testemonials &raquo;</a></p></li>
+          <li><p><a class="btn btn-default" href="#" role="button">Past Clients &raquo;</a></p></li>
+        </ul>
           
         </div>
       </div>
@@ -94,20 +153,23 @@
     
 
     <div class="container">
-      <h1> People </h1>
+      <h1> Team </h1>
       <div class="row">
         <div class="col-md-4">
           <h2>Brady Burke</h2>
+          <h4><i>Founder</i></h4>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>Tom Mohr</h2>
+          <h4><i>Project Manager</i></h4>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
        </div>
         <div class="col-md-4">
           <h2>Jeff England</h2>
+          <h4><i>Project Manager</i></h4>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
@@ -116,6 +178,7 @@
       <div class="row">
         <div class="col-md-4">
           <h2>Brian Pemberton</h2>
+          <h4><i>Project Manager</i></h4>
           <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
@@ -126,31 +189,38 @@
        </div>
         <div class="col-md-4">
           <h2>Luke Reimer </h2>
+          <h4><i>Office Manager</i></h4>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
     </div>
 
-      <hr>
+    <hr>
 
-    <div class="container">
+    <div class="container text-center">
       <h1> Contact </h1>
 
-      <p>
-        Burke Builders <br>
-        5454 Conestoga Court <br>
-        Boulder, CO 80301 <br>
-      </p>
 
-      <div class="row">
-        <div class="col-md-12">
-          <img id="mapmap"src="img/map.png" class="img-responsive" alt="Responsive image">
+            <div class="row">
+        <div class="col-md-2 col-md-offset-2">
+          <span><img src="img/phone.png" class="pull-left"><p class="text-center">720.627.5364</p></span>
         </div>
+        <div class="col-md-2 col-md-offset-1">
+          <span><img src="img/point.png" class="pull-left"><p class="text-center">5454 Conestoga Ct. <br> Boulder CO 80301</p></span>
+       </div>
+        <div class="col-md-3 col-md-offset-1">
+          <span><img src="img/mail.png" class="pull-left"><p class="text-center">info@burkebuildersco.com</p></span>
         </div>
+      </div>
+      <div class="abouldermap">
+
+          <img id="mapmap"src="BBmap2bigtest.png" class="img-responsive" alt="Responsive image">
+
 
       </div>
     </div>
+
 
     <hr>
 
@@ -161,9 +231,13 @@
 
 
 
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/extra.js"></script>
   </body>
 </html>

@@ -8,7 +8,45 @@
   #mapmap {
         margin-left: auto;
     margin-right: auto;
+
   }
+
+
+
+header {
+  height:150px;
+}
+
+#nav.affix {
+    visibility: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+#nav.affix-top {
+  visibility: hidden;
+}
+
+#navlogo.affix {
+    visibility: none;
+    padding-top: 7px;
+}
+
+.topnav {
+  color: #777;
+  cursor: pointer;
+}
+
+svg {
+  cursor: pointer;
+
+}
+
+
+
+
 
 
 html {
@@ -975,7 +1013,15 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #f5f5f5;
+}
+
+.hr2 {
+  width: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 2px solid #f5f5f5;
 }
 .sr-only {
   position: absolute;
@@ -1228,7 +1274,7 @@ a.bg-danger:hover {
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #f5f5f5;
 }
 ul,
 ol {
@@ -1253,7 +1299,7 @@ ol ol {
 .list-inline > li {
   display: inline-block;
   padding-right: 5px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 dl {
   margin-top: 0;
@@ -4565,9 +4611,8 @@ a.list-group-item.active > .badge,
 .jumbotron {
   height: 150px;
   padding: 30px;
-  margin-bottom: 30px;
   color: inherit;
-  background-color: #eee;
+
 }
 .jumbotron h1,
 .jumbotron .h1 {
