@@ -10,6 +10,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
+
   </head>
   <body>
 
@@ -23,16 +24,16 @@
               <img src="img/burke-builders-logo.png" class="img-responsive" alt="Responsive image">
             </div>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-7 text-right">
 
             <ul class="list-inline text-center topnav">
 
-              <li><h4 class="topnav"> About</h4> </li>
-              <li><h4 class="topnav"> Services</h4></li>
-              <li><h4 class="topnav"> Work  </h4></li>
-              <li><h4 class="topnav"> Team  </h4></li>
-              <li><h4 class="topnav"> Contact  </h4></li>
-              <li><h4 class="topnav"> News  </h4></li>
+              <li><a href="#about" style="text-decoration:none;"> <h4 class="topnav"> About</h4> </a></li>
+              <li><h4 id="scrtserv"class="topnav"> Services</h4></li>
+              <li><h4 id="scrtwork"class="topnav"> Work  </h4></li>
+              <li><h4 id="scrtteam"class="topnav"> Team  </h4></li>
+              <li><h4 id="scrtcontact"class="topnav"> Contact  </h4></li>
+              <li><h4 id="scrtnews"class="topnav"> News  </h4></li>
 
             </ul>
 
@@ -84,33 +85,72 @@
 </div>
 
 
-    <div class="container">
-      <h1> About </h1>
-      <hr class="hr2">
+
+
+<a name="about" style="text-decoration:none;"><h1> About </h1></a>
+  <div class="container">
+    
+    <hr class="hr2">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <p>Burke Builders is a construction services company based in Boulder, Colorado since 2004.  We are distinguished by our commitment to excellence, industry experience and integrity, all reflected in a record ofsuccessdelivering projects safely, on-time and within-budget. </p>
+        <p> Burke Builders serves a range of markets including restaurant, retail, office, government, medical, lightindustrial, multifamily and historic restoration. </p>
+  
       <div class="row">
-        <div class="col-md-8 col-md-offset-2 text-center">
-          <p>Burke Builders is a construction services company based in Boulder, Colorado.  Our team is distinguished by its commitment to excellence, industry experience and integrity, all reflected in our 12-year record of success delivering projects safely, on-time and on-budget. </p>
+        <ul class="list-inline">
+         <li><p><a class="btn btn-default" href="#" role="button">Client Testemonials &raquo;</a></p></li>
+         <li><p><a class="btn btn-default" href="#" role="button">Past Clients &raquo;</a></p></li>
+       </ul>
+     </div>
+     </div>
+     </div>
+  </div>
 
-          <p> Burke Builders serves a range of markets including restaurant, retail, office, government, medical, light industrial, multifamily and historic restoration. </p>
+     <div class="panel" >    
 
-        </div>
+      <div class="row logobank text-center">
+        <ul class="list-inline">
+         <li><img src="img/wildwoods.png" id="logoimg" class="img-responsive" alt="Responsive image"></li>
+         <li><img src="img/centbank.png" id="logoimg"class="img-responsive" alt="Responsive image"></li>
+         <li><img src="img/cosmoslogo.png" id="logoimg"class="img-responsive" alt="Responsive image"></li>
+         <li><img src="img/cellularrecy.jpg" id="logoimg"class="img-responsive" alt="Responsive image"></li>
+       </ul>
+        <ul class="list-inline">
+         <li><img src="img/elementlogo.png" id="logoimg"class="img-responsive" alt="Responsive image"></li>
+         <li><img src="img/dynalogo.png" id="logoimg"class="img-responsive" alt="Responsive image"></li>
+         <li><img src="img/lonlogo.png" id="logoimg"class="img-responsive" alt="Responsive image"></li>
+         <li><img src="img/bchlogo.jpg" id="logoimg"class="img-responsive" alt="Responsive image"></li>
+       </ul>
+     </div>
+       </div></div>
 
-      </div>
-    </div>
+
+
 
     <hr>
 
     <div class="container">
       <h1> Services </h1>
+      <hr class="hr2">
       <div class="row">
+
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut tempor tellus. In eu leo lectus. Praesent eget hendrerit erat. Donec non orci quam. Proin venenatis neque in mauris tempus bibendum. Fusce et mauris turpis. Donec varius eget lorem at tincidunt. Sed a mi sit amet mauris placerat pretium ut et nibh. Phasellus vehicula tempor feugiat. Mauris a vestibulum ipsum, vel iaculis odio. Sed a massa massa. Quisque sit amet eros urna. Fusce ornare neque non lectus facilisis dapibus. Proin sed blandit sem, vel finibus nisi. Cras sed odio eget eros commodo iaculis. Aenean velit metus, molestie a tellus id, accumsan blandit ligula.</p>
+
+        <p> Quisque placerat dui in congue tempus. Aliquam vulputate mattis felis ac ornare. Ut felis lorem, tristique ut lectus id, iaculis hendrerit tortor. In gravida sed risus sit amet accumsan. Nam varius sed neque at auctor. Aliquam sit amet nulla viverra, vulputate nibh et, malesuada ipsum. Maecenas turpis nisl, tristique quis ipsum a, ornare mollis turpis. Etiam commodo tempor vestibulum. Sed gravida non dolor vel fringilla. </p>
+      </div>
+        
         <div class="col-md-1 col-md-offset-3 text-center">
+
           <svg width="200" height="200">
-            <circle class="servicecir" cx="80" cy="100" r="75" stroke="#777" stroke-width="4" fill="#fdfdfd" />
-            <text x="40"  y="100" >
+          <circle class="servicecir" cx="80" cy="100" r="75" stroke="#777" stroke-width="4" fill="#fdfdfd" />
+            <text x="40"  y="100" class="">
                     <tspan x="25" dy="0">Preconstruction</tspan>
                     <tspan x="35" dy="1.2em">and Planning</tspan>
             </text>
+            <circle data-toggle="collapse" data-parent="#servsel" href="#collapseOne" class="servicemask" cx="80" cy="100" r="75" fill="#fdfdfd" fill-opacity="0"/>
           </svg>
+          
         </div>
         <div class="col-md-1 col-md-offset-1 text-center">
           <svg width="200" height="200">
@@ -118,41 +158,108 @@
             <text x="30"  y="100" >
                 Construction
             </text>
+            <circle data-toggle="collapse" data-parent="#servsel" href="#collapseTwo" class="servicemask" cx="80" cy="100" r="75" fill="#fdfdfd" fill-opacity="0"/>
           </svg>
         </div>
         <div class="col-md-1 col-md-offset-1 text-center">
           <svg width="200" height="200">
             <circle class="servicecir" cx="80" cy="100" r="75" stroke="#777" stroke-width="4" fill="#fdfdfd" />
             <text x="30"  y="100" >
-                Small Projects
+                    <tspan x="25" dy="0">Small Projects</tspan>
+                    <tspan x="35" dy="1.2em">(or development)</tspan>
             </text>
+            <circle data-toggle="collapse" data-parent="#servsel" href="#collapseThree" class="servicemask" class="servicemask" cx="80" cy="100" r="75" fill="#fdfdfd" fill-opacity="0" />
           </svg>
         </div>
-
       </div>
-    </div>
 
-    <hr>
+<div id="servsel">
 
-    <div class="container">
-      <h1> Work </h1>
-      <div class="row">
-         <ul class="list-inline">
-          <li><p><a class="btn btn-default" href="#" role="button">Client Testemonials &raquo;</a></p></li>
-          <li><p><a class="btn btn-default" href="#" role="button">Past Clients &raquo;</a></p></li>
+
+      <div class="panel"><div id="collapseOne" class="servicepanel col-md-6 col-md-offset-3 collapse" >
+        <h2> Preconstruction Services</h2>
+        <p> Short Paragraph about how precon adds value...</p>
+        <ul>
+          <li>Budget Development</li>
+          <li>Regulations and Permitting</li>
+          <li>Schedule Optimization</li>
+          <li>Design Administration</li>
+          <li>Constructability Review</li>
         </ul>
-          
-        </div>
-      </div>
-    </div>
+      </div></div>
 
-      </div>
+      
+      <div class="panel"><div id="collapseTwo" class="servicepanel col-md-6 col-md-offset-3 collapse" >
+        <h2> Construction Services</h2>
+        <p> Short Paragraph about why construction is important...</p>
+        <ul>
+          <h4>Delivery Methods</h4>
+          <li>General Contractor</li>
+          <li>Construction Manager</li>
+          <li>Design-Build</li>
+      
+          <h4>Capabilities</h4>
+          <li>Scheduling</li>
+          <li>Subcontractor Management</li>
+          <li>Business impact mitigation</li>
+          <li>Cost Tracking / Budget Management</li>
+          <li>Quality Control</li>
+          <li>Scheduling</li>
+          <li>Safety</li>
+        </ul>
+      
+      </div></div>
+      
+      <div class="panel"><div id="collapseThree" class="servicepanel col-md-6 col-md-offset-3 collapse">
+        <h2> Small Project Services (Development, other?)</h2>
+        <ul>
+          <li>stuff</li>
+          <li>stuff 2</li>
+          <li>stuff 3</li>
+        </ul>
+
+      </div></div>
+
+    </div>
     </div>
 
     <hr>
+
+    <div class="container-fluid workcont">
+      <h1> Work </h1>
+      <hr class="hr2">
+    </div>
+
+    <div class="container workcont">
+
+      <div class="row">
+
+        <div class="sampleproj col-md-4"><img src="img/bar.jpg" class="img-responsive" alt="Responsive image" data-image-dimensions="600x400" data-image-focal-point="0.5,0.5" data-type="image"  data-image-resolution="500w" style="opacity: 1; top: 0px;  width: 429px; height: 323px; position: relative;"></div>
+        <div class="sampleproj col-md-4"><img src="img/dynafit.jpg" class="img-responsive" alt="Responsive image"data-image-dimensions="596x400" data-image-focal-point="0.5,0.5" data-type="image"  data-image-resolution="500w" style="opacity: 1; top: 0px;  width: 429px; height: 323px; position: relative;"></div>
+        <div class="sampleproj col-md-4"><img src="img/centbankwork.jpg" class="img-responsive" alt="Responsive image"data-image-dimensions="596x400" data-image-focal-point="0.5,0.5" data-type="image"  data-image-resolution="500w" style="opacity: 1; top: 0px;  width: 429px; height: 323px; position: relative;"></div>
+        
+      </div>
+
+    <div class="row">
+
+        <div class="sampleproj col-md-4"><img src="img/fiscuswork.jpg" class="img-responsive" alt="Responsive image" data-image-dimensions="960x639" data-image-focal-point="0.5,0.5" data-type="image"  data-image-resolution="500w" style="opacity: 1; top: 0px;  width: 429px; height: 323px; position: relative;"></div>
+        <div class="sampleproj col-md-4"><img src="img/laaus.jpg" class="img-responsive" alt="Responsive image"data-image-dimensions="952x635" data-image-focal-point="0.5,0.5" data-type="image"  data-image-resolution="500w" style="opacity: 1; top: 0px;  width: 429px; height: 323px; position: relative;"></div>
+        <div class="sampleproj col-md-4"><img src="img/dwell22.jpg" class="img-responsive" alt="Responsive image"data-image-dimensions="952x634" data-image-focal-point="0.5,0.5" data-type="image"  data-image-resolution="500w" style="opacity: 1; top: 0px;  width: 429px; height: 323px; position: relative;"></div>
+        
+      </div>
     
 
-    <div class="container">
+    <div class="row">
+
+        <div class="sampleproj col-md-4"><img src="img/fiscuswork.jpg" class="img-responsive" alt="Responsive image" data-image-dimensions="960x639" data-image-focal-point="0.5,0.5" data-type="image"  data-image-resolution="500w" style="opacity: 1; top: 0px;  width: 429px; height: 323px; position: relative;"></div>
+        <div class="sampleproj col-md-4"><img src="img/dynafit.jpg" class="img-responsive" alt="Responsive image"data-image-dimensions="596x400" data-image-focal-point="0.5,0.5" data-type="image"  data-image-resolution="500w" style="opacity: 1; top: 0px;  width: 429px; height: 323px; position: relative;"></div>
+        <div class="sampleproj col-md-4"><img src="img/cellrework.jpg" class="img-responsive" alt="Responsive image"data-image-dimensions="712x475" data-image-focal-point="0.5,0.5" data-type="image"  data-image-resolution="500w" style="opacity: 1; top: 0px;  width: 429px; height: 323px; position: relative;"></div>
+        
+      </div>
+    </div>
+    </div>
+
+        <div class="container">
       <h1> Team </h1>
       <div class="row">
         <div class="col-md-4">
@@ -200,8 +307,7 @@
 
     <div class="container text-center">
       <h1> Contact </h1>
-
-
+      <hr class="hr2">
             <div class="row">
         <div class="col-md-2 col-md-offset-2">
           <span><img src="img/phone.png" class="pull-left"><p class="text-center">720.627.5364</p></span>
@@ -213,19 +319,27 @@
           <span><img src="img/mail.png" class="pull-left"><p class="text-center">info@burkebuildersco.com</p></span>
         </div>
       </div>
+      </div>
+
+      
+      <div class="container-fluid">
+        <div class="row">
       <div class="abouldermap">
 
-          <img id="mapmap"src="BBmap2bigtest.png" class="img-responsive" alt="Responsive image">
+          <img id="mapmap"src="img/anewbbmap.png" class="img-responsive" alt="Responsive image">
 
 
       </div>
     </div>
+    </div>
+    
 
 
     <hr>
 
-      <footer>
-        <p>&copy; Burke Builders LLC</p>
+
+      <footer class="text-center">
+        <p>&copy; Burke Builders LLC 2014</p>
       </footer>
     </div> <!-- /container -->
 

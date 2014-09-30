@@ -8,13 +8,48 @@
   #mapmap {
         margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    max-height: 300px;
 
   }
+
+  #logoimg {
+    max-width: 200px;
+    max-height: 100px;
+    valign: middle;
+  }
+
+  #workimg {
+    width: 323px;
+    height: 323px;
+
+  }
+
+  .logobank {
+    background-color: grey;
+    display: none;
+  }
+
+  .workcont {
+    background-color: #fcfcfa;
+  }
+
+  .checkthis {
+
+    width: 100%;
+    height: 500px;
+    background-color: #3c4e5a;
+
+  }
+
+.sampleproj {
+  margin-bottom: 30px;
+}
 
 
 
 header {
-  height:150px;
+  height:50px;
 }
 
 #nav.affix {
@@ -37,6 +72,8 @@ header {
 .topnav {
   color: #777;
   cursor: pointer;
+  font-family: "Helvetica Neue";
+  font-weight: 200;
 }
 
 svg {
@@ -4156,7 +4193,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #fcfcfa;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
@@ -5057,9 +5094,8 @@ a.list-group-item-danger.active:focus {
   line-height: 1.3;
 }
 .panel {
-  margin-bottom: 20px;
+
   background-color: #fff;
-  border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
